@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class App {
     public static void main(String[] args) throws Exception {
         /**
@@ -25,5 +27,11 @@ public class App {
          * 
          */
         System.out.println("Hello, World!");
+        Solution solution = new Solution();
+        int[] nums = { 1, 2, 3 };
+        int[] result = solution.nextPermutation(nums);
+        System.out.println("The given input is: " + Arrays.toString(nums) + " and the next permutation is: "
+                + Arrays.toString(result));
+
     }
 }
